@@ -8,7 +8,25 @@ public class Main {
        Car obj3=new Car("CC3","M-BENZ","Z5",20);
 
 //        System.out.println(obj1.getCarid());
-        System.out.println(obj2.getCarid());
+//        System.out.println(obj2.getCarid());
+//        System.out.println(obj1.isavailable());
+
+//        RentalSystem obj5=new RentalSystem();
+//        System.out.println(obj5.getcars());
+
+//        Rental obj6=new Rental();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

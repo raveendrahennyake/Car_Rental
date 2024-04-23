@@ -30,10 +30,12 @@ public class Car {
     }
     public double calulatePrice (int rentalDays) {
         return rentalDays*Perdayprice;
-
     }
-    public boolean isavailable() {
-        return isavaliable;
+    public void rent() {
+        boolean isAvailable = false;
+    }
+    public void returnCar() {
+      boolean  isAvailable = true;
     }
 
 
@@ -42,7 +44,11 @@ public class Car {
 
 
 
-    }
+
+
+
+
+}
 
 
 
