@@ -7,6 +7,14 @@ public class Main {
        Car obj2=new Car("CC2","AUDI","Y5",15);
        Car obj3=new Car("CC3","M-BENZ","Z5",20);
 
+       RentalSystem rentalSystem=new RentalSystem();
+       rentalSystem.addCar(obj1);
+       rentalSystem.addCar(obj2);
+       rentalSystem.addCar(obj3);
+
+
+
+
 //        System.out.println(obj1.getCarid());
 //        System.out.println(obj2.getCarid());
 //        System.out.println(obj1.isavailable());
@@ -15,6 +23,11 @@ public class Main {
 //        System.out.println(obj5.getcars());
 
 //        Rental obj6=new Rental();
+
+
+
+        RentalSystem obj10=new RentalSystem();
+        obj10.Menu();
 
 
 

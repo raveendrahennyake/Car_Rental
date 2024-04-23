@@ -34,18 +34,16 @@ public class Car {
     public void rent() {
         boolean isAvailable = false;
     }
+
     public void returnCar() {
       boolean  isAvailable = true;
     }
+    public boolean isAvailable() {
+        return isavaliable;
 
+    }
 
-
-
-
-
-
-
-
+    //Car Return Parts
 
 
 }
