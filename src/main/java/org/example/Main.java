@@ -1,51 +1,20 @@
 package org.example;
-
+import java.util.Scanner;
 public class Main {
-
     public static void main(String[] args) {
-       Car obj1=new Car("CC1","BMW","X5",10);
-       Car obj2=new Car("CC2","AUDI","Y5",15);
-       Car obj3=new Car("CC3","M-BENZ","Z5",20);
+        RentalSystem rentalSystem = new RentalSystem();
 
-       RentalSystem rentalSystem=new RentalSystem();
-       rentalSystem.addCar(obj1);
-       rentalSystem.addCar(obj2);
-       rentalSystem.addCar(obj3);
+        Car obj1 = new Car("CC1", "BMW", "X5", 10);
+        Car obj2 = new Car("CC2", "AUDI", "Y5", 15);
+        Car obj3 = new Car("CC3", "M-BENZ", "Z5", 20);
 
+        rentalSystem.addCar(obj1);
+        rentalSystem.addCar(obj2);
+        rentalSystem.addCar(obj3);
 
+        rentalSystem.Menu(); // Display the menu
 
-
-//        System.out.println(obj1.getCarid());
-//        System.out.println(obj2.getCarid());
-//        System.out.println(obj1.isavailable());
-
-//        RentalSystem obj5=new RentalSystem();
-//        System.out.println(obj5.getcars());
-
-//        Rental obj6=new Rental();
-
-
-
-        RentalSystem obj10=new RentalSystem();
-        obj10.Menu();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        RentalSystem Start=new RentalSystem();
+        Start.Menu();
     }
 }

@@ -15,7 +15,7 @@ public class RentalSystem {
         rentals = new ArrayList<>();
     }
     public void addCar(Car car) {
-        cars.add(car);
+       cars.add(car);
     }
     public void addCustomer(Customer customer) {
         customers.add(customer);
@@ -31,8 +31,21 @@ public class RentalSystem {
 //Car Return type
     public void returnCar(Car car) {
         car.returnCar();
-    }
+        Rental rentalToRemove = null;
 
+        for (Rental rental:rentals){
+            if (rental.getCar()==car){
+                rentalToRemove=rental;
+                break;
+            }
+        }
+        if (rentalToRemove !=null){
+            rentals.remove(rentalToRemove);
+        }
+        else {
+            System.out.println("Car was not rented.");
+        }
+    }
 
     //System out out
     public void Menu() {
@@ -42,7 +55,7 @@ public class RentalSystem {
         System.out.println("2. Return a Car");
         System.out.println("3. Exit System");
         System.out.print("Enter your choice: ");
-        // Choice Select
+//         Choice Select
         int your_choice = x.nextInt();
         x.nextLine(); // Consume the newline character
 
@@ -52,11 +65,24 @@ public class RentalSystem {
 
             System.out.println("\nAvailable Cars:");
             for (Car car : cars) {
-                if (car.isAvailable()) {
-                    System.out.println(car.getCarid() + " - " + car.getCarBrand() + " " + car.getCarmode());
-                }
+                System.out.println(car.getCarid() + " - " + car.getCarBrand() + " " + car.getCarmode());
             }
+//            if (cars.size() > 0) {
+//                System.out.println("The cars array has car(s) in it.");
+//            } else {
+//                System.out.println("The cars array is empty.");
+//            }
+
+            System.out.println("Enter your choice car id");
+            String carid=x.nextLine();
+
+            System.out.println("Enter the number of days for rental: ");
+            int rentalDays=x.nextInt();
+
+
+
         }
+
 
     }
 }
