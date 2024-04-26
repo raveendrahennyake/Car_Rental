@@ -81,6 +81,18 @@ public class RentalSystem {
 
 
 
+            Customer newCustomer = new Customer("CUS" + (customers.size() + 1), name);
+            addCustomer(newCustomer);
+            Car selectedCar = null;
+            for (Car car : cars) {
+                if (car.getCarid().equals(carid) && car.isAvailable()) {
+                    selectedCar = car;
+                    break;
+                }
+            }
+
+
+
         }
 
 
