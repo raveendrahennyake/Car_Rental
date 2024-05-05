@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class RentalSystem {
-    private List<Car> cars;
+    
+    private List<Car> cars; //Genaric Type <car?
     private List<Customer> customers;
     private List<Rental> rentals;
 
